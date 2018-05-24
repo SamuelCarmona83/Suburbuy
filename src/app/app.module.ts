@@ -10,7 +10,10 @@ import { CatalogoComponent } from './catalogo/catalogo.component';
 import { AddinmuebleComponent } from './addinmueble/addinmueble.component';
 import { ProfinmuebleComponent } from './profinmueble/profinmueble.component';
 import { FriendsComponent } from './friends/friends.component';
-
+import { RouterModule } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +24,24 @@ import { FriendsComponent } from './friends/friends.component';
     CatalogoComponent,
     AddinmuebleComponent,
     ProfinmuebleComponent,
-    FriendsComponent
+    FriendsComponent,
+    DashboardComponent,
+    LoginComponent,
+    NavbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent },
+      { path: 'Registro', component: RegistrarComponent },
+      { path: 'Login', component: LoginComponent },
+      { path: 'Dashboard', component: DashboardComponent },
+      { path: 'Amigos', component: ListaamigosComponent },
+      { path: 'Catalogo', component: CatalogoComponent },
+      { path: 'Publicar', component: AddinmuebleComponent },
+      { path: 'Publicacion', component: ProfinmuebleComponent },
+      { path: 'Red', component: FriendsComponent }
+      ])
   ],
   providers: [],
   bootstrap: [AppComponent]
