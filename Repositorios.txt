@@ -1,0 +1,14 @@
+1. cd /project path
+2. git add *
+3. git commit -m "Enter commit message here"
+4. git push
+
+
+ng build --prod --aot=false
+ng build --env=prod
+7/8 modules
+
+
+firebase init
+firebase deploy
+firebase open
