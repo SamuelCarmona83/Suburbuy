@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MisInmueblesComponent } from './mis-inmuebles/mis-inmuebles.component';
+import { PostService } from './registrar/post.service';
+
 
 @NgModule({
   declarations: [
@@ -33,6 +36,8 @@ import { MisInmueblesComponent } from './mis-inmuebles/mis-inmuebles.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'Registro', component: RegistrarComponent },
@@ -46,7 +51,7 @@ import { MisInmueblesComponent } from './mis-inmuebles/mis-inmuebles.component';
       { path: 'MisInmuebles', component: MisInmueblesComponent }
       ])
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

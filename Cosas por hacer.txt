@@ -1,0 +1,10 @@
+Montar el Api del back-end en heroku (Mean Nodemon)Done
+Conectar los servicios con el backend Done
+Vista de Perfil de corredor
+Datos de Perfil de corredor
+Configuraciones
+Vista de configuracion de privacidad
+Mejorar la Lista de Amigos Done
+Arreglar la vista del Dashboard Done
+Hacer las graficas y estadisticas
+Gestion de Reportes CVS
