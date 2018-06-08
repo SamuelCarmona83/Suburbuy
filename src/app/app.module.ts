@@ -18,6 +18,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MisInmueblesComponent } from './mis-inmuebles/mis-inmuebles.component';
 import { PostService } from './registrar/post.service';
 import { RequerimientosComponent } from './requerimientos/requerimientos.component';
+import { ClientesComponent } from './clientes/clientes.component';
+
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { RequerimientosComponent } from './requerimientos/requerimientos.compone
     LoginComponent,
     NavbarComponent,
     MisInmueblesComponent,
-    RequerimientosComponent
+    RequerimientosComponent,
+    ClientesComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import { RequerimientosComponent } from './requerimientos/requerimientos.compone
       { path: 'Publicar', component: AddinmuebleComponent },
       { path: 'Publicacion', component: ProfinmuebleComponent },
       { path: 'Red', component: FriendsComponent },
-      { path: 'MisInmuebles', component: MisInmueblesComponent }
+      { path: 'MisInmuebles', component: MisInmueblesComponent },
+      { path: 'Clientes', component: ClientesComponent }
       ])
   ],
   providers: [PostService],
