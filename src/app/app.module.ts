@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MisInmueblesComponent } from './mis-inmuebles/mis-inmuebles.component';
 import { PostService } from './registrar/post.service';
+import { RequerimientosComponent } from './requerimientos/requerimientos.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { PostService } from './registrar/post.service';
     DashboardComponent,
     LoginComponent,
     NavbarComponent,
-    MisInmueblesComponent
+    MisInmueblesComponent,
+    RequerimientosComponent
   ],
   imports: [
     BrowserModule,
