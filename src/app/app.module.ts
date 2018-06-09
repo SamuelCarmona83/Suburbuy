@@ -23,6 +23,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { UsuariobarComponent } from './usuariobar/usuariobar.component';
 import { AdminbarComponent } from './adminbar/adminbar.component';
 import { AmigosbarComponent } from './amigosbar/amigosbar.component';
+import { SolicitudesComponent } from './solicitudes/solicitudes.component';
 
 
 
@@ -45,7 +46,8 @@ import { AmigosbarComponent } from './amigosbar/amigosbar.component';
     PerfilComponent,
     UsuariobarComponent,
     AdminbarComponent,
-    AmigosbarComponent
+    AmigosbarComponent,
+    SolicitudesComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +65,8 @@ import { AmigosbarComponent } from './amigosbar/amigosbar.component';
       { path: 'Red', component: FriendsComponent },
       { path: 'MisInmuebles', component: MisInmueblesComponent },
       { path: 'Clientes', component: ClientesComponent },
-      { path: 'Perfil', component: PerfilComponent }
+      { path: 'Perfil', component: PerfilComponent },
+      { path: 'Solicitudes', component: SolicitudesComponent }
       ])
   ],
   providers: [PostService],
