@@ -15,10 +15,12 @@ export class PostService {
   constructor(private http:HttpClient) { }
 
   get(){
-  	
+
   	this.http.get('https://apirest-suburbuy.herokuapp.com/users').subscribe(data => {
       console.log(data);
     });
+
+    
 
   }
 
