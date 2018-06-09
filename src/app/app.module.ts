@@ -19,6 +19,7 @@ import { MisInmueblesComponent } from './mis-inmuebles/mis-inmuebles.component';
 import { PostService } from './registrar/post.service';
 import { RequerimientosComponent } from './requerimientos/requerimientos.component';
 import { ClientesComponent } from './clientes/clientes.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 
@@ -37,7 +38,8 @@ import { ClientesComponent } from './clientes/clientes.component';
     NavbarComponent,
     MisInmueblesComponent,
     RequerimientosComponent,
-    ClientesComponent
+    ClientesComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,8 @@ import { ClientesComponent } from './clientes/clientes.component';
       { path: 'Publicacion', component: ProfinmuebleComponent },
       { path: 'Red', component: FriendsComponent },
       { path: 'MisInmuebles', component: MisInmueblesComponent },
-      { path: 'Clientes', component: ClientesComponent }
+      { path: 'Clientes', component: ClientesComponent },
+      { path: 'Perfil', component: PerfilComponent }
       ])
   ],
   providers: [PostService],
