@@ -20,6 +20,9 @@ import { PostService } from './registrar/post.service';
 import { RequerimientosComponent } from './requerimientos/requerimientos.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { UsuariobarComponent } from './usuariobar/usuariobar.component';
+import { AdminbarComponent } from './adminbar/adminbar.component';
+import { AmigosbarComponent } from './amigosbar/amigosbar.component';
 
 
 
@@ -39,7 +42,10 @@ import { PerfilComponent } from './perfil/perfil.component';
     MisInmueblesComponent,
     RequerimientosComponent,
     ClientesComponent,
-    PerfilComponent
+    PerfilComponent,
+    UsuariobarComponent,
+    AdminbarComponent,
+    AmigosbarComponent
   ],
   imports: [
     BrowserModule,
