@@ -1,16 +1,33 @@
 <app-navbar></app-navbar>
-<div class="py-5" style="background-image: url(&quot;/assets/images/ladrillos.jpg&quot;);background-size:cover;">
+<div class="py-1"style="background-image: url(&quot;/assets/images/ladrillos.jpg&quot;);background-size:cover;">
     <div class="container">
-      <div class="row m-2">
-        <div class="col-md-3 m-1 bg-dark-opaque">
+      <div class="row ">
+                <div class="container py-5 m-2">
+                <div class="row-sm-w-75 ">
+                    <div class="col-md-12 d-flex justify-content-center align-items-center align-self-center">
+                        <div class="input-group">
+                          <input type="hidden" name="search_param" value="all" id="search_param">
+                          <input type="text" class="form-control m-1 d-flex justify-content-center align-items-center align-self-center w-50" name="x" placeholder="Buscar inmueble...">
+                          <div class="input-group-append">
+                            <button class="btn btn-primary m-1 btn-md" type="button">
+                              <i class="fa fa-fw fa-search fa-1x mx-auto d-flex justify-content-center align-items-center align-self-center"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+      </div>
+      <div class="row m-2 ">
+        <div class="col-md-3 m-2 bg-dark-opaque d-none d-lg-block">
           <app-requerimientos></app-requerimientos>
         </div>
 
-        <div class="col-md-7">
+        <div class="col-md-7 ">
           <!-- CARDS ROW-->
-          <div class="row m-1">
+          <div class="row m-2 d-flex justify-content-center align-items-center align-self-center">
             <div class="col-md-6 ">
-              <div class="card bg-dark ">
+              <div class="card bg-dark shadow-lg ">
                 <img class="card-img-top " src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -20,7 +37,7 @@
               </div>
             </div>
             <div class="col-md-6 ">
-              <div class="card">
+              <div class="card shadow-lg">
                 <img class="card-img-top" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" alt="Card image cap">
                 <div class="card-body bg-dark">
                   <h5 class="card-title">Card title</h5>
@@ -31,9 +48,9 @@
             </div>
           </div>
           <!-- CARDS ROW-->
-          <div class="row m-1">
+          <div class="row m-2 d-flex justify-content-center align-items-center align-self-center">
             <div class="col-md-6 ">
-              <div class="card">
+              <div class="card shadow-lg">
                 <img class="card-img-top" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" alt="Card image cap">
                 <div class="card-body bg-dark">
                   <h5 class="card-title">Card title</h5>
@@ -43,7 +60,7 @@
               </div>
             </div>
             <div class="col-md-6 ">
-              <div class="card">
+              <div class="card shadow-lg">
                 <img class="card-img-top" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" alt="Card image cap">
                 <div class="card-body bg-dark" >
                   <h5 class="card-title">Card title</h5>
@@ -56,9 +73,12 @@
           <!-- CARDS ROW-->
         </div>
           <!-- COLUMM-->
+          <!-- El container de la de derecha
         <div class="col-md-2">
          
         </div>
+
+      -->
       </div>
     
   </div>
