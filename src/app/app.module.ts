@@ -24,6 +24,8 @@ import { UsuariobarComponent } from './usuariobar/usuariobar.component';
 import { AdminbarComponent } from './adminbar/adminbar.component';
 import { AmigosbarComponent } from './amigosbar/amigosbar.component';
 import { SolicitudesComponent } from './solicitudes/solicitudes.component';
+import { VistoadminbarComponent } from './vistoadminbar/vistoadminbar.component';
+import { AgregarclienteComponent } from './agregarcliente/agregarcliente.component';
 
 
 
@@ -47,7 +49,9 @@ import { SolicitudesComponent } from './solicitudes/solicitudes.component';
     UsuariobarComponent,
     AdminbarComponent,
     AmigosbarComponent,
-    SolicitudesComponent
+    SolicitudesComponent,
+    VistoadminbarComponent,
+    AgregarclienteComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +70,8 @@ import { SolicitudesComponent } from './solicitudes/solicitudes.component';
       { path: 'MisInmuebles', component: MisInmueblesComponent },
       { path: 'Clientes', component: ClientesComponent },
       { path: 'Perfil', component: PerfilComponent },
-      { path: 'Solicitudes', component: SolicitudesComponent }
+      { path: 'Solicitudes', component: SolicitudesComponent },
+      { path: 'Addclientes', component: AgregarclienteComponent }
       ])
   ],
   providers: [PostService],
