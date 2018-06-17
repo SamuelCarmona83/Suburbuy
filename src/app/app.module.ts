@@ -26,6 +26,8 @@ import { AmigosbarComponent } from './amigosbar/amigosbar.component';
 import { SolicitudesComponent } from './solicitudes/solicitudes.component';
 import { VistoadminbarComponent } from './vistoadminbar/vistoadminbar.component';
 import { AgregarclienteComponent } from './agregarcliente/agregarcliente.component';
+import { FavoritosComponent } from './favoritos/favoritos.component';
+import { PerfilclienteComponent } from './perfilcliente/perfilcliente.component';
 
 
 
@@ -51,7 +53,9 @@ import { AgregarclienteComponent } from './agregarcliente/agregarcliente.compone
     AmigosbarComponent,
     SolicitudesComponent,
     VistoadminbarComponent,
-    AgregarclienteComponent
+    AgregarclienteComponent,
+    FavoritosComponent,
+    PerfilclienteComponent
   ],
   imports: [
     BrowserModule,
@@ -71,7 +75,9 @@ import { AgregarclienteComponent } from './agregarcliente/agregarcliente.compone
       { path: 'Clientes', component: ClientesComponent },
       { path: 'Perfil', component: PerfilComponent },
       { path: 'Solicitudes', component: SolicitudesComponent },
-      { path: 'Addclientes', component: AgregarclienteComponent }
+      { path: 'Addclientes', component: AgregarclienteComponent },
+      { path: 'Favoritos', component: FavoritosComponent },
+      { path: 'Cliente', component: PerfilclienteComponent },
       ])
   ],
   providers: [PostService],
