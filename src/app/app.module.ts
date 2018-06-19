@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -16,7 +16,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MisInmueblesComponent } from './mis-inmuebles/mis-inmuebles.component';
+
 import { PostService } from './registrar/post.service';
+import { GetcatalogoService } from './services/getcatalogo.service';
+
 import { RequerimientosComponent } from './requerimientos/requerimientos.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { PerfilComponent } from './perfil/perfil.component';
@@ -60,6 +63,7 @@ import { PerfilclienteComponent } from './perfilcliente/perfilcliente.component'
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
 
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
@@ -81,7 +85,7 @@ import { PerfilclienteComponent } from './perfilcliente/perfilcliente.component'
       
       ])
   ],
-  providers: [PostService],
+  providers: [PostService,GetcatalogoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -13,13 +13,25 @@ export class RegistrarComponent implements OnInit {
 
 	//var url = 'https://apirest-suburbuy.herokuapp.com/users';
 
+  //$scope.user = {};
+
   constructor( private http: HttpClient, private _postService: PostService) { }
 
   ngOnInit() {
 
   	
-  	this._postService.get();
+  	
 	
+  }
+
+  get(){
+    this._postService.get();
+  }
+
+  postuser(){
+    
+    //console.log(this.user);
+    //this._postService.post(user);
   }
 
   }

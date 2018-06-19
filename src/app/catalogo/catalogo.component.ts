@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { GetcatalogoService } from '../services/getcatalogo.service';
+
 
 @Component({
   selector: 'app-catalogo',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatalogoComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private http: HttpClient, private _getCatalogoService: GetcatalogoService) { }
 
   ngOnInit() {
+
+   this._getCatalogoService.get();
   }
 
 }
