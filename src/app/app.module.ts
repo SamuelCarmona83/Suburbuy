@@ -1,12 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
-=======
-import { AgmCoreModule} from '@agm/core';
->>>>>>> 7a88ecb4749d6f7d393fd582d07d48c98b3233c4
-
+import { HttpClientModule } from '@angular/common/http';
+//import { AgmCoreModule} from '@agm/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RegistrarComponent } from './registrar/registrar.component';
@@ -67,14 +63,11 @@ import { PerfilclienteComponent } from './perfilcliente/perfilcliente.component'
   imports: [
     BrowserModule,
     HttpClientModule,
-<<<<<<< HEAD
     FormsModule,
-=======
-    AgmCoreModule.forRoot({
+    /*AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAHxwBdfUj3m-O5-VPy2BWCkrgHglrRH4E'
     }),
->>>>>>> 7a88ecb4749d6f7d393fd582d07d48c98b3233c4
-
+    */
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'Registro', component: RegistrarComponent },

@@ -6,30 +6,31 @@
         <h1 class="display-3">New User</h1>
         <h3 class="" contenteditable="true">Please enter the requested fields</h3>
         <form class="h-50">
-          <div class="form-group">
+          <div class="form-group" ng-controller="RegistrarComponent">
             <label>Email address</label>
-            <input type="email" ng-model="email" class="form-control" placeholder="Enter email">
+            <input type="email" class="form-control" placeholder="Enter email">
             <small class="form-text text-muted"></small>
           </div>
           <div class="form-group">
-            <label>{{user.name}}</label>
-            <input type="Name" ng-model="user.name" class="form-control" placeholder="Name"> </div>
+            <label>{{name}}</label>
+            <input type="text"  class="form-control" placeholder="Name"> </div>
             
           <div class="form-group">
             <label>Password</label>
-            <input type="password" ng-model="user.password" class="form-control" placeholder="Password"> </div>
+            <input type="password" [(ngModel)]="user.password" class="form-control" name="Password151515"> </div>
           <div class="form-group">
             <label>Verify Password</label>
-            <input type="password" class="form-control" ng-model="user.password2" placeholder="Password"> </div>
+            <input type="password" class="form-control"  placeholder="Password"> </div>
           <div class="form-group">
             <label>Phone</label>
-            <input type="phone" class="form-control" ng-model="user.phone" placeholder="Phone"> </div>
+            <input type="phone" class="form-control"  placeholder="Phone"> </div>
           <div class="form-group">
             <label>&nbsp;</label>
             <div> </div>
           </div>
           <p class="text-center">Signing up signifies that you have read and agree to the Terms of Service and our Privacy Policy.</p>
           <a class="btn btn-primary btn-lg d-flex text-white mx-auto text-center justify-content-center p-1 w-50" (click)="postuser()">Create Account</a>
+          <pre>user = {{user | json}}</pre>
         </form>
       </div>
     </div>
