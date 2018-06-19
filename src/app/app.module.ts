@@ -78,6 +78,7 @@ import { PerfilclienteComponent } from './perfilcliente/perfilcliente.component'
       { path: 'Addclientes', component: AgregarclienteComponent },
       { path: 'Favoritos', component: FavoritosComponent },
       { path: 'Cliente', component: PerfilclienteComponent },
+      
       ])
   ],
   providers: [PostService],
