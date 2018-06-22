@@ -16,14 +16,10 @@ export class RegistrarComponent implements OnInit {
   constructor( private http: HttpClient, private _postService: PostService) { }
 
   public user = {
-    password: 155151515
   }
 
   ngOnInit() {
 
-    
-  	
-	
   }
 
   get(){
@@ -31,7 +27,8 @@ export class RegistrarComponent implements OnInit {
   }
 
   postuser(){
-    console.log ( this.user )
+    this._postService.post(this.user);
+    console.log ( this.user );
   }
 
   }

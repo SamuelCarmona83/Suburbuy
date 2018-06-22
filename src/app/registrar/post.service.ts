@@ -12,27 +12,22 @@ const httpOptions = {
 
 export class PostService {
 
+
+
   constructor(private http:HttpClient) { }
 
+  public url = 'https://apirest-suburbuy.herokuapp.com/users';
   get(){
 
-  	this.http.get('https://apirest-suburbuy.herokuapp.com/users').subscribe(data => {
+  	this.http.get(this.url).subscribe(data => {
       console.log(data);
     });
   }
 
-  /*
-  post(){
-  	this.http.post('http://jsonplaceholder.typicode.com/posts', user)
-      .subscribe(
-        res => {
-          console.log(res);
-        },
-        err => {
-          console.log("Error occured");
-        }
-      );
+  //Falta por validaciones
+  post(user){
+  	this.http.post(this.url, user).subscribe(res => console.log( "User created"));
   }
-	*/
+	
 
 }
