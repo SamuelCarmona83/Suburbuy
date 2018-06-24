@@ -29,6 +29,7 @@ export class RegistrarComponent implements OnInit {
   postuser(){
     this._postService.post(this.user);
     console.log ( this.user );
+    
   }
 
   }

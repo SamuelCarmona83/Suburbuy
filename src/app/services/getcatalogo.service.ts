@@ -3,21 +3,27 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 
 const httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
 
 @Injectable()
+
 export class GetcatalogoService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  get(){
+  public datos;
+  /**
+   * @return {Json inmuebles}
+   */
 
-  	this.http.get('https://apirest-suburbuy.herokuapp.com/inmuebles').subscribe(data => {
+  public async get() {
+    this.http.get('https://apirest-suburbuy.herokuapp.com/inmuebles').subscribe(data => {
       console.log(data);
-      return data;
+      this.datos = data;
     });
+     return await this.datos;
   }
 
 }

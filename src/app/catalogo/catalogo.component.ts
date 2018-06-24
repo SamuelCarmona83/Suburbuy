@@ -11,11 +11,27 @@ import { GetcatalogoService } from '../services/getcatalogo.service';
 export class CatalogoComponent implements OnInit {
 
 
-  constructor(private http: HttpClient, private _getCatalogoService: GetcatalogoService) { }
+  constructor(private http: HttpClient, private _getCatalogoService: GetcatalogoService) {}
+
+  public inmuebles = [];
+
+
+
 
   ngOnInit() {
-
-   this._getCatalogoService.get();
+     this.getinmuebles();
+    	for (var i = 0; i < this.inmuebles.length; ++i) {
+    		console.log(this.inmuebles[i]);
+    	}
   }
+
+
+  public async getinmuebles(){
+
+  	this.inmuebles = await this._getCatalogoService.get();
+    console.log(this.inmuebles);
+
+  }
+
 
 }
