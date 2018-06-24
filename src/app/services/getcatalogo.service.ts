@@ -18,12 +18,12 @@ export class GetcatalogoService {
    * @return {Json inmuebles}
    */
 
-  public async get() {
+  public  get() {
     this.http.get('https://apirest-suburbuy.herokuapp.com/inmuebles').subscribe(data => {
-      console.log(data);
+      //console.log(data);
       this.datos = data;
     });
-     return await this.datos;
+     return  this.datos;
   }
 
 }

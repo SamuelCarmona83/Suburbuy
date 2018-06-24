@@ -15,22 +15,23 @@ export class CatalogoComponent implements OnInit {
 
   public inmuebles = [];
 
-
-
-
+  //se ejecuta a penas inicia la carga del componente
   ngOnInit() {
-     this.getinmuebles();
-    	for (var i = 0; i < this.inmuebles.length; ++i) {
-    		console.log(this.inmuebles[i]);
-    	}
+   this.getinmuebles();     
   }
 
+  /**
+   * se ejecuta luego del cambio de una directiva o variable
+   */
+  ngDoCheck(){
+    this.getinmuebles();
+  }
 
-  public async getinmuebles(){
-
-  	this.inmuebles = await this._getCatalogoService.get();
-    console.log(this.inmuebles);
-
+  /**
+   * devuelve TODOS los inmuebles
+   */
+  public  getinmuebles(){
+  	this.inmuebles = this._getCatalogoService.get();
   }
 
 

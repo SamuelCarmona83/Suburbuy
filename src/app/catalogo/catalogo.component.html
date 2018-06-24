@@ -26,50 +26,23 @@
             </div>
           </form>
           <!--Items del catalogo-->
-          <div class="row">
+          <div class="row" *ngFor="let inmueble of inmuebles">
             <div class="col-md-12">
               <div class="row">
                 <div class="col-md-12 border">
                   <div class="row">
                     <div class="col-md-3 bg-light border-secondary mx-auto py-3">
-                      <img class="img-fluid d-block rounded ml-auto bg-light py-3 mx-auto" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" width="200" height="200
-200"> </div>
+                      <img class="img-fluid d-block rounded ml-auto bg-light py-3 mx-auto" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" width="200" height="200"> </div>
                     <div class="col-md-9 bg-light border-secondary">
                       <div class="list-group">
                         <a routerLink="/Publicacion" class="list-group-item list-group-item-action flex-column align-items-start active my-4">
                           <div class="d-flex w-100 justify-content-between my-2">
-                            <h5 class="mb-1"></h5>
-                            <small>3 days ago</small>
+                            <h5 class="mb-1">{{inmueble.name | uppercase }}</h5>
+                            <small>{{ inmueble.propertytype }}</small>
                           </div>
-                          <h5 class="mn-1"> Ubicacion del inmueble </h5>
-                          <h5 class="mn-1">Corredor inmobiliario</h5>
+                          <h5 class="mn-1"> {{ inmueble.address }} </h5>
+                          <h5 class="mn-1">{{ inmueble.price }}</h5>
                           <i class="far fa-fw fa-2x fa-heart d-inline mx-auto justify-content-center d-flex"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-12 border">
-                  <div class="row">
-                    <div class="col-md-3 bg-light border-secondary mx-auto py-3">
-                      <img class="img-fluid d-block rounded ml-auto bg-light py-3 mx-auto" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" width="200" height="200
-200"> </div>
-                    <div class="col-md-9 bg-light border-secondary">
-                      <div class="list-group">
-                        <a routerLink="/Publicacion" class="list-group-item list-group-item-action flex-column align-items-start active my-4">
-                          <div class="d-flex w-100 justify-content-between my-2">
-                            <h5 class="mb-1">Nombre de la Publicacion</h5>
-                            <small>3 days ago</small>
-                          </div>
-                          <h5 class="mn-1"> Ubicacion del inmueble </h5>
-                          <h5 class="mn-1">Corredor inmobiliario</h5>
-                          <i class="far fa-fw fa-2x fa-heart d-flex justify-content-center d-inline mx-auto"></i>
                         </a>
                       </div>
                     </div>
@@ -89,6 +62,7 @@
             <div class="col-md-3"> </div>
           </div>
           <h3> </h3>
+          <!--Este es el index de items-->
           <nav>
             <ul class="pagination align-items-center d-flex justify-content-center">
               <li class="page-item">
