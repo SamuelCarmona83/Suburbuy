@@ -1,34 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-  selector: 'app-addinmueble',
-  templateUrl: './addinmueble.component.html',
-  styleUrls: ['./addinmueble.component.css']
-})
-export class AddinmuebleComponent implements OnInit {
-
-  constructor() { }
-  latitude = 6.42375;
-  longitude = -66.58973000000003;
-  locationChosen = false;
-  coords = {};
-  zoom = 4.5;
-
-  
-
-  ngOnInit() {
-
-  }
-
-    onChoseLocation(event) {
-    this.latitude = event.coords.lat;
-    this.longitude = event.coords.lng;
-    this.locationChosen = true;
-    this. coords = event;
-    console.log(this.coords);
-  }
-
-  styles = [
+[
   {
     "elementType": "geometry",
     "stylers": [
@@ -188,6 +158,4 @@ export class AddinmuebleComponent implements OnInit {
       }
     ]
   }
-];
-
-}
+]

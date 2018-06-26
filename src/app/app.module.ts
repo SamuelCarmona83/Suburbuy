@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 //import { AgmCoreModule} from '@agm/core';
+import { AgmCoreModule } from '@agm/core';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RegistrarComponent } from './registrar/registrar.component';
@@ -64,10 +66,10 @@ import { PerfilclienteComponent } from './perfilcliente/perfilcliente.component'
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    /*AgmCoreModule.forRoot({
+    AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAHxwBdfUj3m-O5-VPy2BWCkrgHglrRH4E'
     }),
-    */
+    
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'Registro', component: RegistrarComponent },
