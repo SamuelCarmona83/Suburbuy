@@ -67,7 +67,8 @@ import { PerfilclienteComponent } from './perfilcliente/perfilcliente.component'
     HttpClientModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAHxwBdfUj3m-O5-VPy2BWCkrgHglrRH4E'
+      apiKey: 'AIzaSyAHxwBdfUj3m-O5-VPy2BWCkrgHglrRH4E',
+      libraries:["places"]
     }),
     
     RouterModule.forRoot([

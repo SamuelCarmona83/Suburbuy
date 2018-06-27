@@ -1,74 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
- import { MapsAPILoader } from '@agm/core';
- import {} from '@types/googlemaps';
- import { ViewChild, ElementRef, NgZone } from '@angular/core';
-
-
-
-
-@Component({
-  selector: 'app-addinmueble',
-  templateUrl: './addinmueble.component.html',
-  styleUrls: ['./addinmueble.component.css']
-})
-
-
-
-export class AddinmuebleComponent implements OnInit {
-
-  latitude = 6.42375;
-  longitude = -66.58973000000003;
-  locationChosen = false;
-  coords = {};
-  zoom = 4.5;
-
-  
-@ViewChild('search') public searchElement: ElementRef;
-
-constructor(private mapsAPILoader: MapsAPILoader, private ngZone: NgZone) {}
-
-ngOnInit() {
-  this.initmapa();
-}
-  
-  /**
-   * incia el mapa de publicar inmueble
-   * @param {google.maps.places.PlaceResult = autocomplete.getPlace(); } place [description]
-   */
-  initmapa(){  this.mapsAPILoader.load().then(
-    () => {
-     let autocomplete = new google.maps.places.Autocomplete(this.searchElement.nativeElement);
-
-      autocomplete.addListener("place_changed", () => {
-       this.ngZone.run(() => {
-        let place: google.maps.places.PlaceResult = autocomplete.getPlace();
-        if(place.geometry === undefined || place.geometry === null ){
-            return;
-        }
-          this.latitude = place.geometry.location.lat();
-          this.longitude = place.geometry.location.lng();
-          this.zoom = 14;
-          this.locationChosen = true;
-       });
-      });
-     });}
-  
-  /**
-   * Maneja la direccion cuando se hace click sobre el mapa
-   * @param {event} event mapClic
-   */
-  onChoseLocation(event) {
-    this.latitude = event.coords.lat;
-    this.longitude = event.coords.lng;
-    this.locationChosen = true;
-    this. coords = event;
-    console.log(this.coords);
-  }
-
-
-  // Estilo del mapa porque no entiendo las rutas relativas en variables
-  styles = [
+[
   {
     "elementType": "geometry",
     "stylers": [
@@ -228,6 +158,4 @@ ngOnInit() {
       }
     ]
   }
-];
-
-}
+]
