@@ -18,6 +18,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MisInmueblesComponent } from './mis-inmuebles/mis-inmuebles.component';
+import { ChartModule } from 'angular2-chartjs';
 
 import { PostService } from './registrar/post.service';
 import { GetcatalogoService } from './services/getcatalogo.service';
@@ -33,6 +34,7 @@ import { VistoadminbarComponent } from './vistoadminbar/vistoadminbar.component'
 import { AgregarclienteComponent } from './agregarcliente/agregarcliente.component';
 import { FavoritosComponent } from './favoritos/favoritos.component';
 import { PerfilclienteComponent } from './perfilcliente/perfilcliente.component';
+import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 
 
 
@@ -60,7 +62,8 @@ import { PerfilclienteComponent } from './perfilcliente/perfilcliente.component'
     VistoadminbarComponent,
     AgregarclienteComponent,
     FavoritosComponent,
-    PerfilclienteComponent
+    PerfilclienteComponent,
+    EstadisticasComponent
   ],
   imports: [
     BrowserModule,
@@ -69,6 +72,9 @@ import { PerfilclienteComponent } from './perfilcliente/perfilcliente.component'
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAHxwBdfUj3m-O5-VPy2BWCkrgHglrRH4E',
       libraries:["places"]
+    ChartModule,
+    /*AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAHxwBdfUj3m-O5-VPy2BWCkrgHglrRH4E'
     }),
     
     RouterModule.forRoot([
@@ -88,7 +94,7 @@ import { PerfilclienteComponent } from './perfilcliente/perfilcliente.component'
       { path: 'Addclientes', component: AgregarclienteComponent },
       { path: 'Favoritos', component: FavoritosComponent },
       { path: 'Cliente', component: PerfilclienteComponent },
-      
+      { path: 'Estadisticas', component: EstadisticasComponent }, 
       ])
   ],
   providers: [PostService,GetcatalogoService],
