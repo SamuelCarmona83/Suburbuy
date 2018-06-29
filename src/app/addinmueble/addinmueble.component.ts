@@ -61,6 +61,7 @@ ngOnInit() {
   onChoseLocation(event) {
     this.latitude = event.coords.lat;
     this.longitude = event.coords.lng;
+    this.zoom = 14;
     this.locationChosen = true;
     this. coords = event;
     console.log(this.coords);

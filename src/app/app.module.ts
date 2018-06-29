@@ -71,12 +71,8 @@ import { EstadisticasComponent } from './estadisticas/estadisticas.component';
     FormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAHxwBdfUj3m-O5-VPy2BWCkrgHglrRH4E',
-      libraries:["places"]
+      libraries:["places"] }),
     ChartModule,
-    /*AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAHxwBdfUj3m-O5-VPy2BWCkrgHglrRH4E'
-    }),
-    
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'Registro', component: RegistrarComponent },
