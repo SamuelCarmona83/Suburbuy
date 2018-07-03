@@ -32,12 +32,12 @@
                 <div class="col-md-12 border">
                   <div class="row">
                     <div class="col-md-3 bg-light border-secondary mx-auto py-3">
-                      <img class="img-fluid d-block rounded ml-auto bg-light py-3 mx-auto" src="https://apirest-suburbuy.herokuapp.com/{{inmueble.inmueblesimg}}" width="200" height="200"> </div>
+                      <img class="img-fluid d-block rounded ml-auto bg-light py-3 mx-auto" src="{{inmueble.inmueblesimg}}" width="200" height="200"> </div>
                     <div class="col-md-9 bg-light border-secondary">
                       <div class="list-group">
                         <a routerLink="/Publicacion" class="list-group-item list-group-item-action flex-column align-items-start active my-4">
                           <div class="d-flex w-100 justify-content-between my-2">
-                            <h5 class="mb-1">{{inmueble.name | uppercase }}</h5>
+                            <h5 class="mb-1">{{inmueble.nombre | uppercase }}</h5>
                             <small>{{ inmueble.propertytype }}</small>
                           </div>
                           <h5 class="mn-1"> {{ inmueble.address }} </h5>

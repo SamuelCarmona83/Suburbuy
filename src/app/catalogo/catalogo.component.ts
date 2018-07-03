@@ -17,6 +17,7 @@ export class CatalogoComponent implements OnInit {
 
   //se ejecuta a penas inicia la carga del componente
   ngOnInit() {
+  	
    this.getinmuebles();     
   }
 
@@ -24,7 +25,9 @@ export class CatalogoComponent implements OnInit {
    * se ejecuta luego del cambio de una directiva o variable
    */
   ngDoCheck(){
-    this.getinmuebles();
+  	if (this.inmuebles == null) {
+		this.getinmuebles();
+  	}
   }
 
   /**
