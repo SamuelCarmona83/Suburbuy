@@ -5,6 +5,18 @@
 
 # [API-Restful](https://apirest-suburbuy.herokuapp.com/)
 
+<img src="https://user-images.githubusercontent.com/32780199/136795581-d781ae62-5b94-456b-a1a7-8977da102e73.png" width="90%"></img>
+
+<img src="https://user-images.githubusercontent.com/32780199/136795573-24ac11a7-642d-400e-8612-9e1cf18dffde.png" width="90%"></img> 
+
+<img src="https://user-images.githubusercontent.com/32780199/136795584-27644c3e-633d-468c-b50f-6ee3d00c3adc.png" width="90%"></img> 
+
+
+<img src="https://user-images.githubusercontent.com/32780199/136795583-87409e47-3cb5-421a-a820-9402f9743f8e.png" width="45%"></img>
+
+
+<img src="https://user-images.githubusercontent.com/32780199/136795586-d372c780-3fea-46ee-a7a4-6b59dcb4c96b.png" width="45%"></img> 
+
 # Documentacion
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
