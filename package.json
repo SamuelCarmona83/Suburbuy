@@ -23,7 +23,7 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "@fortawesome/fontawesome": "^1.1.8",
-    "ajv": "^6.5.0",
+    "ajv": "^6.12.3",
     "ajv-keywords": "^3.2.0",
     "angular": "^1.7.9",
     "angular-package-builder": "^1.0.3",
